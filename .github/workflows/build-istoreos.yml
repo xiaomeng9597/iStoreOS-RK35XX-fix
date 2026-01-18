@@ -83,7 +83,7 @@ jobs:
         wget https://bootstrap.pypa.io/pip/3.6/get-pip.py
         sudo python3 get-pip.py
         sudo rm -rf get-pip.py
-        pip install --user pyelftools
+        sudo pip install pyelftools
         echo "------------------------------- 清理Docker镜像和软件 -------------------------------"
         if [ -n "$(docker images -q)" ]; then
         docker rmi $(docker images -q)

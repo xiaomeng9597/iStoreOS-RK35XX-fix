@@ -18,3 +18,6 @@ sed -i "s/OPENWRT_RELEASE.*/OPENWRT_RELEASE=\"%D %V ${date_version} by ${author}
 
 # 拉取我的软件包仓库
 echo 'src-git xmpackages https://github.com/xiaomeng9597/openwrt-packages2.git;main' >> feeds.conf.default
+
+# 添加 QModem 软件源
+echo 'src-git qmodem https://github.com/FUjr/QModem.git;main' >> feeds.conf.default
